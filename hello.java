@@ -2,12 +2,18 @@ class Hello {
     public static void main(String args[]) {
         int num = 5;
         int num2 = 0b0101;
+        int zeroInt = 0;
         int num3 = num + num2;
         byte by = 127;
         boolean state = true;
         char lang = 't';
         System.out.println(by);
         // System.out.println(a);
+        try {
+            num3 = num/zeroInt;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("Hello world");
         String a = "Thursday";
         String currentDay = switch (a) {

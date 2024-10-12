@@ -5,13 +5,15 @@ class Hello {
         int zeroInt = 0;
         int num3 = num + num2;
         byte by = 127;
-        boolean state = true;
-        char lang = 't';
+        // boolean state = true;
+        // char lang = 't';
         System.out.println(by);
         // System.out.println(a);
         try {
             num3 = num/zeroInt;
-        } catch (Exception e) {
+            System.out.println(num3);
+        }
+        catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Hello world");

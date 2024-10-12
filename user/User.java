@@ -1,9 +1,9 @@
 package user;
 
 class User implements UserInterface {
-    public String name;
-    public String email;
-    public String username;
+    private String name;
+    private String email;
+    private String username;
 
     @Override
     public String getName(){

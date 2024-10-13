@@ -1,7 +1,7 @@
 package user;
 
-public interface UserInterface {
-    String getName();
-    String getUserName();
-    String getEmail();
+public interface UserInterface extends ReadOnlyUserInterface {
+    void setName(String name);
+    void setUserName(String userName);
+    void setEmail(String email);
 }

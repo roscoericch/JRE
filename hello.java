@@ -5,13 +5,19 @@ class Hello {
         int zeroInt = 0;
         int num3 = num + num2;
         byte by = 127;
+        int[] arr = new int[5];
+        arr[2] = 1;
         // boolean state = true;
         // char lang = 't';
         System.out.println(by);
         // System.out.println(a);
         try {
+            System.err.println(arr[5]);
             num3 = num/zeroInt;
             System.out.println(num3);
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println(e.getMessage());
         }
         catch (ArithmeticException e) {
             System.out.println(e.getMessage());

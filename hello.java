@@ -1,3 +1,9 @@
+class CustomException extends Exception {
+    public CustomException(String str) {
+        super(str);
+    }
+}
+
 class Hello {
     public static void main(String args[]) {
         int num = 5;
@@ -15,11 +21,15 @@ class Hello {
             System.err.println(arr[5]);
             num3 = num/zeroInt;
             System.out.println(num3);
+            throw new CustomException("custom exception");
         }
         catch (ArrayIndexOutOfBoundsException e) {
             System.err.println(e.getMessage());
         }
         catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+        catch (CustomException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Hello world");

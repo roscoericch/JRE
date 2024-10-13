@@ -27,7 +27,7 @@ public class PrimeChecker {
             s.next();
         }
     } 
-        boolean check = PrimeChecker.isPrime(n);
+        boolean check = isPrime(n);
         System.out.println(check);
     }
 }
